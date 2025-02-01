@@ -1,6 +1,7 @@
 ### welcome_assignment_answers
 ### Input - All nine questions given in the assignment.
 ### Output - The right answer for the specific question.
+import hashlib
 
 def welcome_assignment_answers(question):
     # Students do not have to follow the skeleton for this assignment.
@@ -37,6 +38,9 @@ def welcome_assignment_answers(question):
 if __name__ == "__main__":
     #use this space to debug and verify that the program works
     debug_question = "Are encoding and encryption the same? - Yes/No"
+    print(welcome_assignment_answers(debug_question))
+
+    debug_question = "What is the SHA256 hashing value of your NYU email and use the answer in your code - "
     print(welcome_assignment_answers(debug_question))
 
 #Questions:
