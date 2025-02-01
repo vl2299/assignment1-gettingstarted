@@ -17,13 +17,15 @@ def welcome_assignment_answers(question):
         case "Is a hashed message supposed to be un-hashed? - Yes/No":
             return "No"
         case "What is the SHA256 hashing value of your NYU email and use the answer in your code - ":
+            nyu_email = "vl2299@nyu.edu"
+            sha256_hash = hashlib.sha256(nyu_email.encode()).hexdigest()
             return ""
         case "Is MD5 a secured hashing algorithm? - Yes/No":
-            return ""
+            return "No"
         case "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
-            return ""
+            return "5"
         case "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
-            return ""
+            return "3"
         case _:
             # Default case if the question doesn't match any case
             return "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
