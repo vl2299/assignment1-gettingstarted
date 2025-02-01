@@ -26,7 +26,7 @@ def welcome_assignment_answers(question):
     elif question == "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
         answer = 5
     elif question == "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
-        answer = "3"
+        answer = 3
     else:
         # Default case if the question doesn't match any case
         answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
