@@ -5,16 +5,28 @@
 def welcome_assignment_answers(question):
     #Students do not have to follow the skeleton for this assignment.
     #Another way to implement is using a "case" statements similar to C.
-    if question == "Are encoding and encryption the same? - Yes/No":
-        answer = "The student should type the answer here"
-    elif question == "Is it possible to decrypt a message without a key? - Yes/No":
-        answer = "The student should type the answer here"
-    else: 
-        ### you should understand why this else case should be included
-        ### what happens if there is a typo in one of the questions?
-        ### maybe put something here to flag an issue and catch errors
-        answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
-    return(answer)
+    match question:
+        case "In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?":
+            return "pcap"
+        case "Are encoding and encryption the same? - Yes/No":
+            return "No"
+        case "Is it possible to decrypt a message without a key? - Yes/No":
+            return "No"
+        case "Is it possible to decode a message without a key? - Yes/No":
+            return "Yes"
+        case "Is a hashed message supposed to be un-hashed? - Yes/No":
+            return "No"
+        case "What is the SHA256 hashing value of your NYU email and use the answer in your code - ":
+            return ""
+        case "Is MD5 a secured hashing algorithm? - Yes/No":
+            return ""
+        case "What layer of the TCP/IP model does the protocol DNS belong to? - The answer should be an integer number":
+            return ""
+        case "What layer of the TCP/IP model does the protocol ICMP belong to? - The answer should be an integer number":
+            return ""
+        case _:
+            # Default case if the question doesn't match any case
+            return "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
 # Complete all the questions.
 
 
@@ -24,7 +36,7 @@ if __name__ == "__main__":
     print(welcome_assignment_answers(debug_question))
 
 #Questions:
-#"In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?":
+#"In Slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a TA?": pcap
 #"Are encoding and encryption the same? - Yes/No":
 #"Is it possible to decrypt a message without a key? - Yes/No":
 #"Is it possible to decode a message without a key? - Yes/No":
